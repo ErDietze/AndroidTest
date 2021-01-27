@@ -1,16 +1,17 @@
 <resources>
     <string name="app_name">newTestApplication</string>
-    <string name="action_einstellungen">Einstellungen</string>
+    <string name="action_einstellungen">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="weiter">Weiter</string>
-    <string name="zurueck">Zurück</string>
+    <string name="weiter">Next</string>
+    <string name="zurueck">Previous</string>
     <string name="anmelden">Login</string>
     <string name="abmelden">Logout</string>
-    <string name="loginToast">Sie sind eingeloggt</string>
-    <string name="benutzername">Benutzername</string>
-    <string name="passwort">Passwort</string>
+
+    <string name="loginToast">You are logged in</string>
+    <string name="benutzername">Username</string>
+    <string name="passwort">Password</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

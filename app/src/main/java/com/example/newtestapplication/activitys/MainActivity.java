@@ -1,12 +1,11 @@
 package com.example.newtestapplication.activitys;
 
 import android.os.Bundle;
+import android.widget.Toast;
 import com.example.newtestapplication.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.newtestapplication.actionListener.LogoutListener;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,14 +19,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+
+       /** FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        }); **/
     }
 
     @Override
@@ -45,8 +45,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_einstellungen) {
+            Toast.makeText(this,"option", Toast.LENGTH_SHORT).show();
+        }
+        if (id == R.id.menuAbmelden){
+           /** Intent login = new Intent(this, LoginActivity.class);
+            Toast.makeText(this,"abmelden", Toast.LENGTH_SHORT).show();
+            this.startActivity(login); */
+           new LogoutListener(this);
         }
 
         return super.onOptionsItemSelected(item);
