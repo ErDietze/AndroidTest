@@ -12,6 +12,10 @@
     <string name="loginToast">You are logged in</string>
     <string name="benutzername">Username</string>
     <string name="passwort">Password</string>
+    <string name="passwordEmpty">Password is empty</string>
+    <string name="usernameEmpty">No username entered</string>
+    <string name="usernameAndPwEmpty">Username and password are empty</string>
+
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

@@ -20,7 +20,7 @@ public class DatabaseConnectionHelper extends SQLiteOpenHelper {
     private static final String COLUMN_USER_ACTIVE_TABLE_USER = "user_active";
     private static final String COLUMN_PASSWORD_TABLE_USER = "password";
 
-    private final static String CREAT_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + "("
+    private final static String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + "("
             + ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + COLUMN_FIRST_NAME_TABLE_USER + " Varchar(30),"
             + COLUMN_LAST_NAME_TABLE_USER + " Varchar(40),"
@@ -37,7 +37,7 @@ public class DatabaseConnectionHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREAT_TABLE);
+        db.execSQL(CREATE_TABLE);
     }
 
     @Override
@@ -103,7 +103,6 @@ public class DatabaseConnectionHelper extends SQLiteOpenHelper {
     public Cursor getAllData() {
         SQLiteDatabase db = getWritableDatabase();
         Cursor res = db.rawQuery("Select * from " + TABLE_NAME + ";", null);
-        db.close();
         return res;
     }
 }
