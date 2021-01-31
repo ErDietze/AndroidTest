@@ -19,16 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-       /** FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        }); **/
     }
 
     @Override
@@ -48,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_einstellungen) {
             Intent setting = new Intent(this, SettingsActivity.class);
-            Toast.makeText(this,"option", Toast.LENGTH_SHORT).show();
             this.startActivity(setting);
         }
         if (id == R.id.menuAbmelden){
