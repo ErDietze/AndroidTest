@@ -30,13 +30,13 @@
             app:layout_constraintHorizontal_bias="0.502" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="416dp"/>
     <TextView
-            android:text="Username:"
+            android:text="@string/usernameLogin"
             android:layout_width="211dp"
             android:layout_height="55dp" android:id="@+id/tVUsername"
             android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/inputUsername"/>
     <TextView
-            android:text="Password:"
+            android:text="@string/passwordLogin"
             android:layout_width="215dp"
             android:layout_height="34dp" android:id="@+id/tVPassword"
             android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
