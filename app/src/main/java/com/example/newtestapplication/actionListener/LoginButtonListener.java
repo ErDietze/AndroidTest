@@ -34,6 +34,8 @@ public class LoginButtonListener implements View.OnClickListener {
                 Toast.makeText(baseActivity, R.string.loginToast, Toast.LENGTH_LONG).show();
                 this.baseActivity.startActivity(mainActivity);
             } else {
+                /** TODO entfernen
+                new DatabaseConnectionHelper(baseActivity).insertData("test", "test","1234", true); **/
                 Toast.makeText(baseActivity, R.string.wrongCredentials, Toast.LENGTH_SHORT).show();
             }
         }

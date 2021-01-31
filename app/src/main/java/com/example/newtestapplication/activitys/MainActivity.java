@@ -1,5 +1,6 @@
 package com.example.newtestapplication.activitys;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 import com.example.newtestapplication.R;
@@ -46,12 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_einstellungen) {
+            Intent setting = new Intent(this, SettingsActivity.class);
             Toast.makeText(this,"option", Toast.LENGTH_SHORT).show();
+            this.startActivity(setting);
         }
         if (id == R.id.menuAbmelden){
-           /** Intent login = new Intent(this, LoginActivity.class);
-            Toast.makeText(this,"abmelden", Toast.LENGTH_SHORT).show();
-            this.startActivity(login); */
            new LogoutListener(this);
         }
 

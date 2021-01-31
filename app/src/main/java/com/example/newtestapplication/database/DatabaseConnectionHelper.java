@@ -108,7 +108,7 @@ public class DatabaseConnectionHelper extends SQLiteOpenHelper {
     public boolean userExist(String name, String password) {
         boolean result = false;
         SQLiteDatabase db = getReadableDatabase();
-        Cursor r = db.rawQuery("Select * from " + TABLE_NAME + " where lastName=? and password =?;", new String[]{name, password});
+        Cursor r = db.rawQuery("Select * from " + TABLE_NAME + " where lastName=? and password =? and user_active = 1;", new String[]{name, password});
         if (r.getCount() > 0) {
             result = true;
         }
