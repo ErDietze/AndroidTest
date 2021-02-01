@@ -19,6 +19,12 @@
     <string name="emptyDataSet">Keine Daten vorhanden</string>
     <string name="wrongCredentials">Passwort oder Nutzername nicht Korrekt oder Nutzer nicht vorhanden</string>
 
+    <!-- Hauptmenü -->
+    <string name="mainMenu">Hauptmenü</string>
+    <string name="hours">Stundenerfassung</string>
+    <string name="holiday">Urlaubsanträge</string>
+    <string name="illness">Arbeitsunfähigkeit</string>
+
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_settings">SettingsActivity</string>
